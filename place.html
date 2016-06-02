@@ -1,0 +1,15 @@
+<html>
+<head>
+    <!-- js的引入 -->
+    <script src="place.js" type="text/javascript"></script>
+</head>
+
+<!-- 通过body的onload事件调用js里面的initialize()方法来初始化省市级联下拉框 -->
+<body onload="javascript:initialize();">
+
+<!-- 通过省的select框的onchange()事件调用js里面的selectchange(province,city)事件给市的select框添加值 -->
+<select id="province" onchange="javascript:selectchange(province,city);"></select>
+
+<select id="city"></select>
+</body>
+</html>
